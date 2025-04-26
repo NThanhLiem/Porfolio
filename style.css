@@ -1,70 +1,88 @@
 /* reset CSS */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 1000px;
-    background-image: linear-gradient(to right, #a0d7ff, #a4dafe, #a9ddfd, #aedffc, #b3e2fb, #a8daf6, #9ed3f0, #93cbeb, #76b7e0, #58a2d5, #398eca, #097abf);
-    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #b2daf7, #a0d1f2, #8dc8ed, #79bfe7, #63b6e2, #54aede, #43a6d9, #2e9ed5, #2495d0, #198ccb, #1083c5, #097abf);    min-height: 100vh;
     color: white;
+    font-family: "Roboto", sans-serif;
+    position: relative;
 }
 
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
     width: 100%;
 }
 
 
- button{
+button {
     width: 100;
     height: max-content;
 }
 
+.bar{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
 
-nav ul{
+}
+
+
+nav ul {
     display: flex;
     gap: 20px;
     list-style: none;
-    
-}
-nav a {
-    text-decoration: none;
-    color:antiquewhite
+
 }
 
-.container{
-    max-width: 1200px;;
+nav a {
+    text-decoration: none;
+    color: antiquewhite
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    ;
     margin: 0 auto;
     padding: 20px;
 }
 
- button{
+button {
     padding: 12px 25px;
-    border-radius: 15px ;
+    border-radius: 15px;
     color: white;
     background-color: #1a3660;
     border: none;
-    outline:rgba(213, 178, 211, 1);
+    outline: rgba(213, 178, 211, 1);
     display: flex;
     gap: 10px;
- }
+}
 
-.logo{
+.logo {
     font-size: 25px;
     font-weight: 900;
-    background: linear-gradient(to right, #5e74e1, #3876a3);
+    background-image: linear-gradient(to right bottom, #b2daf7, #a0d1f3, #8dc8ef, #78c0eb, #61b7e7, #52afe2, #40a7de, #2b9fd9, #2296d3, #198ccc, #1083c6, #097abf);
     /* De mau ne cho chu */
     background-clip: text;
     color: transparent;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.btn-wrapper{
+.btn-wrapper {
     display: flex;
     width: 500px;
     gap: 5px;
@@ -73,7 +91,7 @@ nav a {
 
 /* ----------------------------------------------------- */
 
-main{
+main {
     display: flex;
     width: 100%;
     height: fit-content;
@@ -81,7 +99,7 @@ main{
     align-items: flex-start;
 }
 
-.content{
+.content {
     width: 40%;
     display: flex;
     margin-top: 20px;
@@ -90,72 +108,124 @@ main{
     gap: 15px;
 }
 
-.content> h1{
+.content>h1 {
     font-size: 63px;
     font-weight: 1000;
 }
 
-.content > h1 > span {
-    background: linear-gradient(to right, white, rgb(145, 156, 255)); 
+.content>h1>span {
+    background-image: linear-gradient(to right bottom, #b2daf7, #a0d1f3, #8dc8ef, #78c0eb, #61b7e7, #52afe2, #40a7de, #2b9fd9, #2296d3, #198ccc, #1083c6, #097abf);
     background-clip: text;
     color: transparent;
 }
+
 /* Select: Pesudo classes */
-.content >p:nth-of-type(1) {
+.content>p:nth-of-type(1) {
     font-size: 40px;
 }
-.content >p:nth-of-type(2) {
+
+.content>p:nth-of-type(2) {
     font-size: 25px;
 }
 
 
 
-.btn-wrapper > .btn-start:hover {
-    transform:translateY(-5px); 
+.btn-wrapper>.btn-start:hover {
+    transform: translateY(-5px);
     box-shadow: rgba(167, 31, 31, 0.25) 0px 54px 55px, rgba(150, 29, 29, 0.12) 0px -12px 30px, rgba(156, 37, 37, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(253, 1, 1, 0.09) 0px -3px 5px;
     transition: all 0.2s ease-in;
 }
-.btn-wrapper > .btn-read {
+
+.btn-wrapper>.btn-read {
     background-color: transparent;
     padding: 12px 25px;
-    border-radius: 15px ;
+    border-radius: 15px;
     color: rgb(77, 122, 213);
-    border: 2px solid  rgb(104, 133, 211);
+    border: 2px solid rgb(104, 133, 211);
     ;
     position: relative;
     overflow: hidden;
-    
-}
-.btn-wrapper > .btn-read:before{
-content: "";
-position: absolute;
-background-color: #2e68be;
-width: 0;
-height: 100%;
-top: 0;
-left: 0;
-transition: all 0.3s ease;
-z-index: -1;
 
 }
-.btn-wrapper > .btn-read:hover{
+
+.btn-wrapper>.btn-read:before {
+    content: "";
+    position: absolute;
+    background-color: #2e68be;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+
+}
+
+.btn-wrapper>.btn-read:hover {
     color: white;
 }
 
-.btn-wrapper> .btn-read:hover::before{
+.btn-wrapper>.btn-read:hover::before {
     width: 100%;
 }
-.boximg{
+
+.boximg {
     display: flex;
     width: 70%;
 
 
 }
 
-.boximg > img{
+.boximg>img {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     max-width: 100%;
     object-fit: contain;
 }
+
+
+
+/* @media only screen and (max-width: 900px){
+    main{
+        display: none;
+    }
+} */
+
+@media (max-width: 900px){
+    .container header nav,
+    .container header button{
+        display: none;
+    }
+    .bar{
+        display: block;
+    }
+    main{   
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .content{
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 510px){
+        .content h1{
+            white-space: nowrap;
+        }
+    }
+
+    .image_conntainer img{
+        width: 350px ;
+        height: 350px;
+    }
+   
+}
+
+
+
+
+
